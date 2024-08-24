@@ -1,9 +1,6 @@
-
 // melhorar o formulario e colocar logica
 //arrumar para que quando um link do menu for clicado, ele seja fechado
 //testar no celular
-
-
 
 //--------------- menu mobile
 const menuToggle = document.querySelector(".menuToggle");
@@ -117,3 +114,44 @@ document.querySelectorAll('.menuList a').forEach(anchor => {
     });
 });
 
+//--------------------- formulario / modal
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+
+//abre o modal
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    overlay.classList.add('show')
+    modal.classList.add('show')
+
+     // Define a opacidade para 1 após um breve atraso para a transição de opacidade ocorrer suavemente
+    setTimeout(() => {
+        overlay.style.opacity = '1';
+        modal.style.opacity = '1';
+    }, 10);
+});
+
+//fecha o modal
+function closeModal() {
+    overlay.style.opacity = '0';
+    modal.style.opacity = '0';
+
+    setTimeout(() => {
+        overlay.classList.remove('show');
+        modal.classList.remove('show');
+    }, 500); // Tempo deve corresponder à duração da transição
+}
+
+//fecha o modal clicando no X
+document.getElementById('closeModal').addEventListener('click', function() {
+    closeModal()
+});
+
+
+//fecha o modal clicando fora dele---
+document.addEventListener("click", function(event){
+    if (overlay.contains(event.target)) {
+        closeModal()
+    }
+})
