@@ -235,12 +235,12 @@ html{
     font-weight: 400;
 }
 
-.team .teamMembers .membersContainer .member .image{
+.team .teamMembers .membersContainer .member .image img{
     border-radius: 50%;
-    background-image: url(../images/avatar.png);
+    /* background-image: url(../images/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 4rem;
     height: 4rem;
     margin-left: 1rem;
@@ -256,14 +256,15 @@ html{
     gap: 1rem;
 }
 
-.team .teamMembers .membersContainer span{
+.team .teamMembers .membersContainer .btnSlider{
     background-color: gray;
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
-.team .teamMembers .membersContainer span.selected{
+.team .teamMembers .membersContainer .btnSlider.selected{
     background-color: black;
 }
 
