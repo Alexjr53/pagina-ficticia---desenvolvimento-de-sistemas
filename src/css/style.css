@@ -318,6 +318,11 @@ html{
     color: white;
 }
 
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
 .contact .mapContainer{
     width: 40rem;
     display: flex;
