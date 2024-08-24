@@ -14,17 +14,17 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="home">
         <div class="navContainer">
             <div class="logo">
-                <a href=""><img src="src/images/logo.png" alt="logo do site"></a>
+                <img src="src/images/logo.png" alt="logo do site">
             </div>
             <nav class="navBar">
                 <ul class="menuList">
-                    <li><a href="#">Home</a></li>
                     <li><a href="#services">Serviços</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#team">Time</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
             <div class="menuToggle"><img class="menuImage" src="src/images/menu.png" alt=""></div>
@@ -56,7 +56,7 @@
         <div class="deviceContainer"><img class="device" src="src/images/device.png" alt="foto de um celular"></div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="aboutContainer">
             <h2 class="aboutTitle">Tecnologia para Transformar Negócios</h2>
             <p class="aboutText">Somos especialistas em desenvolver soluções que impulsionam o crescimento das empresas.
@@ -66,7 +66,7 @@
         <img src="src/images/mockup.jpg" alt="imagem de ilustração do site">
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
 
         <div class="teamDetails">
             <div class="detailsTextContainer">
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
 
         <div class="formContainer">
             <h3>Entre em contato</h3>
@@ -125,6 +125,8 @@
         <p>Todos os direitos reservados</p>
         <p>contato@gmail.com</p>
     </footer>
+
+    <div class="buttonHome"><a href="#home"><img src="src/images/arrow.png" alt="seta para cima"></a></div>
 </body>
 
 <script src="src/js/index.js"></script>

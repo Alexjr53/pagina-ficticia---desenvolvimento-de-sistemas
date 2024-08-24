@@ -1,5 +1,5 @@
 html{
-    scroll-behavior: smooth; /*faz a rolagem da página ser mais suave*/  
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -237,10 +237,6 @@ html{
 
 .team .teamMembers .membersContainer .member .image img{
     border-radius: 50%;
-    /* background-image: url(../images/avatar.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     width: 4rem;
     height: 4rem;
     margin-left: 1rem;
@@ -353,4 +349,23 @@ html{
 .footer p{
     font-size: 1.6rem;
     color: white;
+}
+
+.buttonHome {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.5s;
+    z-index: 2;
+}
+
+.buttonHome:hover{
+    transform: scale(1.3);
+}
+
+
+.buttonHome img{
+    width: 7rem;
 }

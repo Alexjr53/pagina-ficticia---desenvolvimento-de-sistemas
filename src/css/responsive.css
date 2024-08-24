@@ -66,13 +66,14 @@
         background-color: #472562;
         border-bottom: 0.1rem solid gray;
         position: fixed;
+        z-index: 2;
         top: 0;
-        z-index: 1;
+        
     }
     
     .header .logo{
         width: 5rem;
-        z-index: 2;
+        z-index: 3;
     }
 
     .header .navBar .menuList{
@@ -118,7 +119,7 @@
     .header .menuToggle{
         display: block;
         padding-top: 1rem;
-        z-index: 2;
+        z-index: 3;
     }
     
     .about{
