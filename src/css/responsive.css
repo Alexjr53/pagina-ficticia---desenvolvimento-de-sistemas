@@ -192,6 +192,20 @@
         font-size: 2.8rem;
     }
     
+    .services .servicesContainer .textContent .servicesTitle{
+        font-size: 2rem;
+    }
+    
+    .services .servicesContainer .textContent p{
+        font-size: 1.5rem;
+    }
+    
+    .services .servicesContainer .textContent li{
+        font-size: 1.5rem;
+    }
+    .services .servicesContainer .textContent .contactBtn{
+        font-size: 1.5rem;
+    }
 
     .about{
         height: 38rem;
@@ -229,4 +243,3 @@
         width: 35rem;
     }
 }
-/* fazer um botão para contato */
