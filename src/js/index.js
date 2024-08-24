@@ -1,6 +1,6 @@
 
-// fazer os links levarem ate a section atraves do js
 // melhorar o formulario e colocar logica
+//arrumar para que quando um link do menu for clicado, ele seja fechado
 //testar no celular
 
 
@@ -97,4 +97,23 @@ sliderBtn.forEach(button => {
 
 })
 
+
+//--------------- função para os links do menu
+document.querySelectorAll('.menuList a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Evita o comportamento padrão do link
+
+        // Obtém o ID da seção a ser rolada para
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            // Rolagem suave
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center' // Centraliza o elemento verticalmente
+            });
+        }
+    });
+});
 
