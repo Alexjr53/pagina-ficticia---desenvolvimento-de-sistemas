@@ -103,11 +103,11 @@
             <h3>Entre em contato</h3>
             <p>Gostaria de saber mais sobre nossos serviços? Preencha o formulário abaixo e nossa equipe entrará em
                 contato com você em breve.</p>
-            <form class="form">
+            <form class="form" id="contactForm">
                 <input type="text" placeholder="Nome*">
                 <input type="email" placeholder="E-mail*">
                 <textarea name="" id="" placeholder="Mensagem*"></textarea>
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
         <div class="mapContainer">
@@ -120,6 +120,21 @@
             </div>
         </div>
     </section>
+
+     <!-- Overlay -->
+     <div id="overlay" class="overlay"></div>
+
+     <div id="modal" class="modal">
+         <div class="imageContainer"><img id="closeModal" src="src/images/fechar.png" alt="icone de um X"></div>
+        <div class="modalContent">
+            <div class="confirmationMessage">
+                <h2>Mensagem enviada com sucesso!</h2>
+                <p>Agradecemos por entrar em contato!</p>
+                <p>Sua mensagem foi recebida e nossa equipe responderá o mais breve possível.</p>
+                <p>Enquanto isso, sinta-se à vontade para explorar mais sobre nossos serviços em nosso site.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <p>Todos os direitos reservados</p>

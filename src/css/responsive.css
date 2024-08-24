@@ -153,6 +153,19 @@
         align-items: center;
         justify-content: center;
     }
+
+    .modal {
+        width:45rem;
+    }
+    
+    .modal .modalContent .confirmationMessage h2{
+        font-size: 2.2rem;
+    }
+    
+    .modal .modalContent .confirmationMessage p{
+        font-size: 1.5rem;
+    }
+
 }
 
 @media(max-width:628px){
@@ -228,7 +241,10 @@
     .footer{
         flex-direction: column;
     }
-    
+
+    .modal {
+        width: 85%;
+    }
 }
 
 @media(max-width: 410px){
