@@ -150,10 +150,18 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     if (isValid) {
         openModal();
+        resetInputs();
     }
 
 });
 
+
+function resetInputs(){
+    document.getElementById('name').value = ""
+    document.getElementById('email').value = ""
+    document.getElementById('message').value = ""
+    
+}
 
 function openModal() {
     overlay.classList.add('show')
