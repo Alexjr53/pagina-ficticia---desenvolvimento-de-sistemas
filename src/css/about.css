@@ -1,0 +1,33 @@
+.about{
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 3rem 0;
+    position: relative;
+    background-color: rgb(238, 238, 238);
+}
+
+.about .aboutContainer{
+    text-align: center;
+    max-width: 100rem;
+}
+
+.about .aboutContainer .aboutTitle{
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.about .aboutContainer .aboutText{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about img {
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8rem;
+    min-width: 80rem;
+    max-width: 60%;
+}

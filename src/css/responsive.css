@@ -47,6 +47,10 @@
         display: flex;
         justify-content: space-around;
     }
+
+    .buttonHome:hover{
+        transform: scale(1);
+    }
     
 }
 

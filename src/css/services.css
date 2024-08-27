@@ -1,0 +1,59 @@
+.services{
+    background-color: #472562;
+    height: 43rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.services .deviceContainer{
+    position: relative;
+    height: 43rem;
+    width: 47rem;
+}
+
+.services .deviceContainer .device{
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    max-width: 54.8rem;
+}
+
+.services .servicesContainer{
+    color: white;
+    width: 46rem;
+    height: 25rem;
+}
+
+.services .servicesContainer .textContent .servicesTitle{
+    font-size: 2.7rem;
+}
+
+.services .servicesContainer .textContent p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.services .servicesContainer .textContent .servicesList{
+    list-style-position: inside;
+    margin-top: 1rem;
+}
+
+.services .servicesContainer .textContent li{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.services .servicesContainer .textContent .contactBtn{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    background-color: #FF703D;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+}

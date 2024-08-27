@@ -1,0 +1,94 @@
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .teamDetails{
+    color: white;
+    background-color: #835FA7;
+    width: 50%;
+    height: 38rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 5rem 3rem 0;
+}
+
+.team .teamDetails .detailsTextContainer{
+    width: 60rem;
+    padding-right: 3rem;
+}
+
+.team .teamDetails .detailsTextContainer h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.team .teamDetails .detailsTextContainer p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.team .teamMembers{
+    background-color: rgb(238, 238, 238);
+    width: 50%;
+    height: 38rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5rem 3rem 0;
+}
+
+.team .teamMembers .membersContainer{
+    width: 60rem;
+}
+
+.team .teamMembers .membersContainer .member{
+    display: flex;
+}
+
+.team .teamMembers .membersContainer .member .memberDetails{
+    margin-bottom: 1rem;
+}
+
+.team .teamMembers .membersContainer .member .memberDetails h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.team .teamMembers .membersContainer .member .memberDetails p{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.team .teamMembers .membersContainer .member .image img{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.team .teamMembers .membersContainer p{
+    font-size: 1.8rem;
+}
+
+.team .teamMembers .membersContainer .slide{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.team .teamMembers .membersContainer .btnSlider{
+    background-color: gray;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.team .teamMembers .membersContainer .btnSlider.selected{
+    background-color: black;
+}

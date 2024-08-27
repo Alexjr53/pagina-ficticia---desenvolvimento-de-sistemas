@@ -1,0 +1,72 @@
+.header{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header .navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 2rem 0;
+    gap:7rem;
+    width: 100%;
+}
+
+.header .logo{
+    width: 6rem;
+}
+
+.header .logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.header .navBar  .menuList{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.header .navBar .menuList li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.7s ease;
+}
+
+.header .menuToggle{
+    display: none;
+    cursor: pointer;
+}
+
+.header .headerMainContainer{
+    width: 73%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.header .headerMainContainer .textBox{
+    width: 62rem;
+}
+
+.header .headerMainContainer .textBox .title{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.header .headerMainContainer .textBox .titleText{
+    font-size: 1.7rem;
+    color: white;
+}
