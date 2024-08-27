@@ -1,6 +1,3 @@
-
-//testar no celular
-
 //--------------- menu mobile
 const menuToggle = document.querySelector(".menuToggle");
 const menuMobile = document.querySelector(".menuList");
@@ -88,26 +85,24 @@ function handleButtonClick(event) {
     slideContainer.innerHTML = memberContent;
 }
 
-sliderBtn.forEach(button => {
+sliderBtn.forEach(button => { //botão do slide
     button.addEventListener('click', handleButtonClick);
 
 })
 
-
 //--------------- função para os links do menu
 document.querySelectorAll('.menuList a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault(); // Evita o comportamento padrão do link
+        e.preventDefault(); 
 
-        // Obtém o ID da seção a ser rolada para
+        // Obtém o ID da seção 
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            // Rolagem suave
             targetElement.scrollIntoView({
                 behavior: 'smooth',
-                block: 'center' // Centraliza o elemento verticalmente
+                block: 'center' 
             });
         }
     });
@@ -122,7 +117,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     event.preventDefault();
 
     // Validação dos campos
-    const name = document.getElementById('name').value.trim();
+    const name = document.getElementById('name').value.trim(); // retira os espaços vazios da string
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
     let isValid = true;
@@ -167,8 +162,8 @@ function openModal() {
     overlay.classList.add('show')
     modal.classList.add('show')
 
-     // Define a opacidade para 1 após um breve atraso para a transição de opacidade ocorrer suavemente
-    setTimeout(() => {
+    
+    setTimeout(() => {  // Define a opacidade para 1 após um breve atraso para a transição de opacidade ocorrer
         overlay.style.opacity = '1';
         modal.style.opacity = '1';
     }, 10);
@@ -182,7 +177,7 @@ function closeModal() {
     setTimeout(() => {
         overlay.classList.remove('show');
         modal.classList.remove('show');
-    }, 500); // Tempo deve corresponder à duração da transição
+    }, 500); 
 }
 
 //fecha o modal clicando no X
@@ -193,7 +188,7 @@ document.getElementById('closeModal').addEventListener('click', function() {
 
 //fecha o modal clicando fora dele---
 document.addEventListener("click", function(event){
-    if (overlay.contains(event.target)) {
+    if (overlay.contains(event.target)) { //se o clique for no overlay executa a função closeModal
         closeModal()
     }
 })
