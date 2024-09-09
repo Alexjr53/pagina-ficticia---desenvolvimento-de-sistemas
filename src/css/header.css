@@ -117,7 +117,7 @@
         transition: transform 0.8s ease-in-out;
         background-color: rgba(0, 0, 0, 0.808);
     }
- 
+
     .show {
         transform: translateY(0);
         display: flex;
