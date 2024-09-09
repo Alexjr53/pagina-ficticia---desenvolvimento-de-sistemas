@@ -8,18 +8,18 @@
     background-color: rgb(238, 238, 238);
 }
 
-.about .aboutContainer{
+.aboutContainer{
     text-align: center;
     max-width: 100rem;
 }
 
-.about .aboutContainer .aboutTitle{
+.aboutTitle{
     font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 2rem;
 }
 
-.about .aboutContainer .aboutText{
+.aboutText{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -30,4 +30,52 @@
     bottom: -8rem;
     min-width: 80rem;
     max-width: 60%;
+}
+
+@media(max-width: 992px) {
+    .about img {
+        min-width: 70rem;
+    }
+}
+
+@media(max-width: 768px){
+    .about{
+        height: 45rem;
+    }
+    
+    .about img {
+        min-width: 45rem;
+    }
+
+    .aboutTitle{
+        font-size: 2rem;
+    }
+    
+    .aboutText{
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 576px){
+    .about{
+        height: 38rem;
+    }
+
+    .about img {
+        min-width: 30rem;
+    }
+    
+    .aboutTitle{
+        font-size: 1.8rem;
+    }
+    
+    .aboutText{
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 480px){    
+    .about{
+        height: 35rem;
+    }
 }

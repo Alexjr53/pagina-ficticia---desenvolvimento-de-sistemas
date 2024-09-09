@@ -14,20 +14,18 @@
     <link rel="stylesheet" href="src/css/contact.css">
     <link rel="stylesheet" href="src/css/modal.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/buttonHome.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/arrowBtn.css">
     <link rel="shortcut icon" href="src/images/favicon-32-32.png" type="image/x-icon">
     <title>Site de Demonstração de Desenvolvimento de Sistemas</title>
 </head>
 
 <body>
-
     <header class="header" id="home">
         <div class="navContainer">
             <div class="logo">
                 <img src="src/images/logo.png" alt="logo do site">
             </div>
-            <nav class="navBar">
+            <nav>
                 <ul class="menuList">
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#about">Sobre</a></li>
@@ -40,10 +38,8 @@
         <div class="headerMainContainer">
             <div class="textBox">
                 <h1 class="title">Sistemas próprios <br> para empresas autênticas</h1>
-                <p class="titleText">Desenvolvemos sistemas personalizados que atendem às necessidades específicas de
-                    cada empresa.</p>
-                <p class="titleText">Nossa equipe é especializada em criar soluções tecnológicas que potencializam seus
-                    negócios e otimizam seus processos.</p>
+                <p class="titleText">Desenvolvemos sistemas personalizados que atendem às necessidades específicas de cada empresa.</p>
+                <p class="titleText">Nossa equipe é especializada em criar soluções tecnológicas que potencializam seus negócios e otimizam seus processos.</p>
             </div>
         </div>
     </header>
@@ -67,23 +63,18 @@
     <section class="about" id="about">
         <div class="aboutContainer">
             <h2 class="aboutTitle">Tecnologia para Transformar Negócios</h2>
-            <p class="aboutText">Somos especialistas em desenvolver soluções que impulsionam o crescimento das empresas.
-                Nossos sistemas são projetados para melhorar a eficiência, reduzir custos e aumentar a competitividade
-                no mercado.</p>
+            <p class="aboutText">Somos especialistas em desenvolver soluções que impulsionam o crescimento das empresas. Nossos sistemas são projetados para melhorar a eficiência, reduzir custos e aumentar a competitividade no mercado.</p>
         </div>
         <img src="src/images/mockup.jpg" alt="imagem de ilustração do site">
     </section>
 
     <section class="team" id="team">
-
         <div class="teamDetails">
             <div class="detailsTextContainer">
                 <h3>Nosso time</h3>
-                <p>Com uma equipe composta por profissionais altamente qualificados, estamos preparados para enfrentar
-                    os desafios de cada projeto, entregando resultados que superam as expectativas.</p>
+                <p>Com uma equipe composta por profissionais altamente qualificados, estamos preparados para enfrentar os desafios de cada projeto, entregando resultados que superam as expectativas.</p>
             </div>
         </div>
-
         <div class="teamMembers">
             <div class="membersContainer">
                 <div id="dynamicContent">
@@ -92,11 +83,11 @@
                             <h3>Alexsandro Rosa Junior</h3>
                             <p>Co-Founder / Desenvolvedor</p>
                         </div>
-                        <div class="image"><img src="src/images/avatar.png" alt=""></div>
+                        <div class="photo"><img src="src/images/avatar.png" alt=""></div>
                     </div>
                     <p class="membersText">Nossa abordagem é centrada no cliente. Trabalhamos em estreita colaboração para garantir que cada solução desenvolvida esteja alinhada com os objetivos de negócio e gere valor real.</p>
                 </div>
-                <div class="slide">
+                <div class="slider">
                     <span id="1" class="btnSlider selected"></span>
                     <span id="2" class="btnSlider"></span>
                     <span id="3" class="btnSlider"></span>
@@ -104,13 +95,10 @@
             </div>
         </div>
     </section>
-
     <section class="contact" id="contact">
-
         <div class="formContainer">
             <h3>Entre em contato</h3>
-            <p>Gostaria de saber mais sobre nossos serviços? Preencha o formulário abaixo e nossa equipe entrará em
-                contato com você em breve.</p>
+            <p>Gostaria de saber mais sobre nossos serviços? Preencha o formulário abaixo e nossa equipe entrará em contato com você em breve.</p>
             <form class="form" id="contactForm">
                 <input type="text" placeholder="Nome*" id="name">
                 <input type="email" placeholder="E-mail*" id="email">
@@ -129,11 +117,11 @@
         </div>
     </section>
 
-     <!-- Overlay -->
-     <div id="overlay" class="overlay"></div>
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
 
-     <div id="modal" class="modal">
-         <div class="imageContainer"><img id="closeModal" src="src/images/fechar.png" alt="icone de um X"></div>
+    <div id="modal" class="modal">
+        <div class="imageContainer"><img id="closeModal" src="src/images/fechar.png" alt="icone de um X"></div>
         <div class="modalContent">
             <div class="confirmationMessage">
                 <h2>Mensagem enviada com sucesso!</h2>
@@ -149,9 +137,7 @@
         <p>alexsandro.rosajunior97@gmail.com</p>
     </footer>
 
-    <div class="buttonHome"><a href="#home"><img src="src/images/arrow.png" alt="seta para cima"></a></div>
+    <div class="arrowBtn"><a href="#home"><img src="src/images/arrow.png" alt="seta para cima"></a></div>
+    <script src="src/js/index.js"></script>
 </body>
-
-<script src="src/js/index.js"></script>
-
 </html>

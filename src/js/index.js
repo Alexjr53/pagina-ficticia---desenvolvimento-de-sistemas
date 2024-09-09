@@ -47,7 +47,7 @@ function handleButtonClick(event) {
                                       <h3>Alexsandro Rosa Junior</h3>
                                         <p>Co-Founder / Desenvolvedor</p>
                                     </div>
-                                    <div class="image"><img src="src/images/avatar.png" alt="foto do alexsandro"></div>
+                                    <div class="photo"><img src="src/images/avatar.png" alt="foto do alexsandro"></div>
                                </div>
                                 <p class="membersText">Nossa abordagem é centrada no cliente. Trabalhamos em estreita colaboração para garantir que cada solução desenvolvida esteja alinhada com os objetivos de negócio e gere valor real.</p>
                              `
@@ -60,7 +60,7 @@ function handleButtonClick(event) {
                                       <h3>Maria Silva</h3>
                                         <p>Gerente de Projetos</p>
                                     </div>
-                                    <div class="image"><img src="src/images/avatar-2.png" alt="foto do alexsandro"></div>
+                                    <div class="photo"><img src="src/images/avatar-2.png" alt="foto do alexsandro"></div>
                                </div>
                                 <p class="membersText">Maria é responsável por garantir que cada etapa do desenvolvimento seja concluída dentro dos prazos e com a qualidade esperada, sempre focando nas necessidades do cliente.</p>
                              `
@@ -73,7 +73,7 @@ function handleButtonClick(event) {
                                       <h3>João Pereira</h3>
                                         <p>Designer UX/UI</p>
                                     </div>
-                                    <div class="image"><img src="src/images/avatar-3.png" alt="foto do alexsandro"></div>
+                                    <div class="photo"><img src="src/images/avatar-3.png" alt="foto do alexsandro"></div>
                                </div>
                                 <p class="membersText">Especialista em criar interfaces que garantem uma experiência fluida e eficiente para o usuário. trabalha em conjunto com a equipe de desenvolvimento para transformar ideias em produtos digitais incríveis.</p>
                              `

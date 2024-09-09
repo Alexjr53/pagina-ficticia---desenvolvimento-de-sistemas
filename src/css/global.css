@@ -2,3 +2,8 @@ html{
     scroll-behavior: smooth;
 }
 
+@media(max-width: 748px){
+    .no-scroll { /* classe para desativar o scroll da pagina */ 
+        overflow: hidden;
+    }
+}

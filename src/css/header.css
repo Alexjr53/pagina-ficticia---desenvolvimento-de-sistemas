@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-.header .navContainer{
+.navContainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -19,35 +19,35 @@
     width: 100%;
 }
 
-.header .logo{
+.logo{
     width: 6rem;
 }
 
-.header .logo img{
+.logo img{
     width: 100%;
     border-radius: 50%;
 }
 
-.header .navBar  .menuList{
+.menuList{
     display: flex;
     align-items: center;
     list-style: none;
     gap: 3rem;
 }
 
-.header .navBar .menuList li a{
+.menuList li a{
     color: white;
     text-decoration: none;
     font-size: 2rem;
     transition: 0.7s ease;
 }
 
-.header .menuToggle{
+.menuToggle{
     display: none;
     cursor: pointer;
 }
 
-.header .headerMainContainer{
+.headerMainContainer{
     width: 73%;
     height: 60rem;
     display: flex;
@@ -56,17 +56,106 @@
     align-items: end;
 }
 
-.header .headerMainContainer .textBox{
+.textBox{
     width: 62rem;
 }
 
-.header .headerMainContainer .textBox .title{
+.title{
     font-size: 4rem;
     color: white;
     margin-bottom: 1.5rem;
 }
 
-.header .headerMainContainer .textBox .titleText{
+.titleText{
     font-size: 1.7rem;
     color: white;
+}
+
+@media(max-width: 992px) {
+    .headerMainContainer {
+        width: 100%;
+        height: 60rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textBox {
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px){
+    .header{
+        padding-top: 6rem;/* compensa o espaço que navContainer deixa de ocupar quando vira position fixed */
+    }
+    
+    .navContainer{
+        padding: 2rem 2rem;
+        background-color: #472562;
+        border-bottom: 0.1rem solid gray;
+        position: fixed;
+        z-index: 2;
+        top: 0;    
+    }
+    
+    .logo{
+        width: 5rem;
+        z-index: 3;
+    }
+    
+    .menuList{
+        width: 100%;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        gap: 0;
+        transform: translateY(-94rem);
+        transition: transform 0.8s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.808);
+    }
+ 
+    .show {
+        transform: translateY(0);
+        display: flex;
+    }
+
+    .menuList li{
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .menuList li:hover{
+        background-color: rgba(37, 37, 37, 0.37);
+    }
+
+    .menuList li a{
+        font-size: 3.5rem;
+    }
+    
+    .menuToggle{
+        display: block;
+        padding-top: 1rem;
+        z-index: 3;
+    }
+}
+
+@media(max-width:576px){
+    .title{
+        font-size: 2.7rem;
+    }
+
+    .titleText{
+        font-size: 1.5rem;
+    }
+
+    .menuList li a{
+        font-size: 2.8rem;
+    }
 }

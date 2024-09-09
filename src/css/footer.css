@@ -10,3 +10,9 @@
     font-size: 1.6rem;
     color: white;
 }
+
+@media(max-width:539px){
+    .footer{
+        flex-direction: column;
+    }
+}

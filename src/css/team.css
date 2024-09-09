@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-.team .teamDetails{
+.teamDetails{
     color: white;
     background-color: #835FA7;
     width: 50%;
@@ -15,24 +15,24 @@
     padding: 5rem 3rem 0;
 }
 
-.team .teamDetails .detailsTextContainer{
+.detailsTextContainer{
     width: 60rem;
     padding-right: 3rem;
 }
 
-.team .teamDetails .detailsTextContainer h3{
+.detailsTextContainer h3{
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-style: italic;
 }
 
-.team .teamDetails .detailsTextContainer p{
+.detailsTextContainer p{
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 3rem;
 }
 
-.team .teamMembers{
+.teamMembers{
     background-color: rgb(238, 238, 238);
     width: 50%;
     height: 38rem;
@@ -42,46 +42,46 @@
     padding: 5rem 3rem 0;
 }
 
-.team .teamMembers .membersContainer{
+.membersContainer{
     width: 60rem;
 }
 
-.team .teamMembers .membersContainer .member{
+.memberText{
+    font-size: 1.8rem;
+}
+
+.member{
     display: flex;
 }
 
-.team .teamMembers .membersContainer .member .memberDetails{
+.memberDetails{
     margin-bottom: 1rem;
 }
 
-.team .teamMembers .membersContainer .member .memberDetails h3{
+.memberDetails h3{
     font-size: 2rem;
     font-weight: 400;
 }
 
-.team .teamMembers .membersContainer .member .memberDetails p{
+.memberDetails p{
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-.team .teamMembers .membersContainer .member .image img{
+.photo img{
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
     margin-left: 1rem;
 }
 
-.team .teamMembers .membersContainer p{
-    font-size: 1.8rem;
-}
-
-.team .teamMembers .membersContainer .slide{
+.slider{
     display: flex;
     margin-top: 1rem;
     gap: 1rem;
 }
 
-.team .teamMembers .membersContainer .btnSlider{
+.btnSlider{
     background-color: gray;
     border-radius: 50%;
     width: 2rem;
@@ -89,6 +89,46 @@
     cursor: pointer;
 }
 
-.team .teamMembers .membersContainer .btnSlider.selected{
+ .btnSlider.selected{
     background-color: black;
+}
+
+@media(max-width: 992px) {
+    .teamDetails{
+        width: 50%;
+        height: 40rem;
+        justify-content: center;
+    }
+    
+    .detailsTextContainer{
+        padding-right: 0;
+    }
+    
+    .teamMembers{
+        height: 40rem;
+        justify-content: center;
+    }
+    
+    .membersContainer{
+        width: 60rem;
+    }
+}
+
+@media(max-width: 768px){
+    .team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .teamDetails{
+        width: 100%;
+        padding: 5rem 2rem 0;
+    }
+
+    .teamMembers{
+        width: 100%;
+        padding: 5rem 2rem 0;
+    }
 }

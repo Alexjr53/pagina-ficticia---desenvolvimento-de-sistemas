@@ -29,39 +29,59 @@
     opacity: 0;
 }
 
-.modal .imageContainer{
+.imageContainer{
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.modal img{
+.imageContainer img{
     width: 3rem;
     cursor: pointer;
 }
 
-.modal .modalContent{
+.modalContent{
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 2rem 0 3rem;
 }
 
-.modal .modalContent .confirmationMessage{
+.confirmationMessage{
     text-align: center;
     color: white;
 }
 
-.modal .modalContent .confirmationMessage h2{
+.confirmationMessage h2{
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
-.modal .modalContent .confirmationMessage p{
+.confirmationMessage p{
     font-size: 1.7rem;
 }
 
 .modal.show, /*usado para fazer ele aparecer usando javascritp*/
 .overlay.show {
     display: block;
+}
+
+@media(max-width: 768px){
+    .modal {
+        width:45rem;
+    }
+    
+    .confirmationMessage h2{
+        font-size: 2.2rem;
+    }
+    
+    .confirmationMessage p{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:576px){
+    .modal {
+        width: 85%;
+    }
 }
