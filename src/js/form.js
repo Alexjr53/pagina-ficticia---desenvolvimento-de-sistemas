@@ -1,37 +1,16 @@
 //--------------------- formulario / modal
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
+const userName = document.getElementById('name')
+const email = document.getElementById('email')
+const message = document.getElementById('message')
 
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-
+    
     // Validação dos campos
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    let isValid = true;
-
-    if (name === "") {
-        showError('name', 'Por favor, insira seu nome.');
-        isValid = false;
-    } else {
-        removeError('name');
-    }
-
-    if (email === "") {
-        showError('email', 'Por favor, insira seu e-mail.');
-        isValid = false;
-    } else {
-        removeError('email');
-    }
-
-    if (message === "") {
-        showError('message', 'Por favor, insira sua mensagem.');
-        isValid = false;
-    } else {
-        removeError('message');
-    }
+    let isValid = validateFields();
 
     if (isValid) {
         openModal();
@@ -39,6 +18,31 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
 
 });
+
+function validateFields(){
+    let isValid = true;
+    if (userName.value.trim() === "") {
+        showError('name', 'Por favor, insira seu nome.');
+        isValid = false;
+    } else {
+        removeError('name');
+    }
+
+    if (email.value.trim() === "") {
+        showError('email', 'Por favor, insira seu e-mail.');
+        isValid = false;
+    } else {
+        removeError('email');
+    }
+
+    if (message.value.trim() === "") {
+        showError('message', 'Por favor, insira sua mensagem.');
+        isValid = false;
+    } else {
+        removeError('message');
+    }
+    return isValid
+}
 
 
 function resetInputs(){
