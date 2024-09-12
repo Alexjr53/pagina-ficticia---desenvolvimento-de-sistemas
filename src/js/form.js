@@ -1,12 +1,13 @@
 //--------------------- formulario / modal
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
-const userName = document.getElementById('name')
-const email = document.getElementById('email')
-const message = document.getElementById('message')
+const userName = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const form = document.getElementById('contactForm');
 
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) {
     event.preventDefault();
     
     // Validação dos campos
@@ -14,7 +15,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     if (isValid) {
         openModal();
-        resetInputs();
+        form.reset()
     }
 
 });
@@ -44,13 +45,6 @@ function validateFields(){
     return isValid
 }
 
-
-function resetInputs(){
-    document.getElementById('name').value = ""
-    document.getElementById('email').value = ""
-    document.getElementById('message').value = ""
-}
-
 function openModal() {
     overlay.classList.add('show')
     modal.classList.add('show')
@@ -60,7 +54,6 @@ function openModal() {
         modal.style.opacity = '1';
     }, 10);
 }
-
 
 function closeModal() {
     overlay.style.opacity = '0';
@@ -84,7 +77,6 @@ document.addEventListener("click", function(event){
         closeModal()
     }
 })
-
 
 function showError(fieldId, message) {
     const field = document.getElementById(fieldId);
